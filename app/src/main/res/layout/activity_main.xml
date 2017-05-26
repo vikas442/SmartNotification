@@ -41,13 +41,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Track Screen Unlock"
+                    android:text="Screen Unlock"
                     android:textSize="18sp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Only works when app is opened."/>
+                    android:text="Only works when app is opened."
+                    android:visibility="gone"/>
             </LinearLayout>
 
             <Switch
@@ -83,7 +84,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Track and Log Calls"
+                    android:text="Calls"
                     android:textSize="18sp"/>
 
                 <TextView

@@ -36,4 +36,12 @@ public class CallReceiver extends PhoneCallReceiver {
         LogHelper.writeFile(ctx.getString(R.string.outgoing_call_log_template, number,
                 DateUtils.formatDate(end)), ctx);
     }
+
+    @Override
+    protected void onMissedCall(Context ctx, String number, Date start) {
+        NotificationHelper notificationHelper = new NotificationHelper(ctx);
+        notificationHelper.generateMissedCallNotification(ctx, number);
+        LogHelper.writeFile(ctx.getString(R.string.missed_call_log_template, number,
+                DateUtils.formatDate(start)), ctx);
+    }
 }

@@ -3,7 +3,14 @@
     <string name="title_logs">Call Logs</string>
     <string name="incoming_call_template">You received call from %1s</string>
     <string name="outgoing_call_template">You placed call to %1s</string>
+    <string name="missed_call_template">Missed call from %1s</string>
 
     <string name="incoming_call_log_template" formatted="false">You received call from %1s at %2s. </string>
     <string name="outgoing_call_log_template" formatted="false">You placed call to %1s at %2s. </string>
+    <string name="missed_call_log_template" formatted="false">Missed call from %1s at %2s. </string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="submit">Submit</string>
+    <string name="title_register">Register</string>
 </resources>

@@ -51,13 +51,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        IntentFilter filter = new IntentFilter(Intent.ACTION_USER_PRESENT);
-        registerReceiver(mPhoneUnlockReceiver, filter);
+//        IntentFilter filter = new IntentFilter(Intent.ACTION_USER_PRESENT);
+//        registerReceiver(mPhoneUnlockReceiver, filter);
     }
 
     @Override
     protected void onDestroy() {
-        unregisterReceiver(mPhoneUnlockReceiver);
+//        unregisterReceiver(mPhoneUnlockReceiver);
         super.onDestroy();
     }
 

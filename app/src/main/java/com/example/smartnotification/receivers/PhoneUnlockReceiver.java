@@ -11,10 +11,14 @@ public class PhoneUnlockReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        if (AppSetting.isUnlockTrackingEnabled(context)) {
-            if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
-                NotificationHelper notificationHelper = new NotificationHelper(context);
+
+        if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
+            NotificationHelper notificationHelper = new NotificationHelper(context);
+            if (AppSetting.isUnlockTrackingEnabled(context)) {
                 notificationHelper.generateUnlockNotification(context);
+            }
+            if (!AppSetting.isRegistered(context)) {
+                notificationHelper.generateRegisterNotification(context);
             }
         }
     }
